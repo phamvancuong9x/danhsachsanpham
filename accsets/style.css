@@ -134,7 +134,7 @@ ul{
 max-width: 1200px;
 margin: auto;
 min-height: calc(100vh - 65px);
-
+padding-bottom: 40px;
 }
 .content__header {
   display: flex;

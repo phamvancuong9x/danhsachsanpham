@@ -20,6 +20,9 @@ input {
   outline: none;
   transition: 0.3s ease;
 }
+input::placeholder{
+  color: #fff;
+}
 ul {
   list-style-type: none;
 }

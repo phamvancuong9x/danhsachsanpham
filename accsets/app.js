@@ -246,6 +246,7 @@ for(let i=0;i<array.length;i=i+2){
   return array;
 }
 
+
 // const getElmClassBtnProduct=$('.product')
 // const getElmClassBtnBuy=$('.product__btn-buy')
 // function translateBtnBuy(){

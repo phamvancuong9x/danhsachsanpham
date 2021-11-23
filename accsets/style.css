@@ -9,10 +9,8 @@
 }
 html {
   scroll-behavior: smooth;
- 
 }
-body{
-  
+body {
 }
 img {
   display: block;
@@ -22,14 +20,13 @@ input {
   outline: none;
   transition: 0.3s ease;
 }
-ul{
+ul {
   list-style-type: none;
 }
 .nav-search:focus {
   border-bottom: 2px solid #fff;
 }
 .main {
-  
 }
 /* header */
 .header {
@@ -131,10 +128,10 @@ ul{
 }
 /* content */
 .content {
-max-width: 1200px;
-margin: auto;
-min-height: calc(100vh - 65px);
-padding-bottom: 40px;
+  max-width: 1200px;
+  margin: auto;
+  min-height: calc(100vh - 65px);
+  padding-bottom: 40px;
 }
 .content__header {
   display: flex;
@@ -142,43 +139,43 @@ padding-bottom: 40px;
   justify-content: center;
   margin-top: 80px;
 }
-.btn__header{
-width: 140px;
-height: 45px;
-font-size: 20px;
-border: 1px solid #ccc;
-border-radius: 25px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0 20px 20px 20px;
-transition: 0.3s ease;
-cursor: pointer;
+.btn__header {
+  width: 140px;
+  height: 45px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px 20px 20px;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
-.btn__header:hover{
+.btn__header:hover {
   border: 1px solid rgb(35, 20, 243) !important;
 }
-.btn__all{
-  border: 1px solid rgb(35, 20, 243)
+.btn__all {
+  border: 1px solid rgb(35, 20, 243);
 }
-.btn__iphone{
-color: #555;
-}
-
-.btn__samsung{
-color: #333;
-font-weight: bold;
+.btn__iphone {
+  color: #555;
 }
 
-.btn__oppo{
+.btn__samsung {
+  color: #333;
+  font-weight: bold;
+}
+
+.btn__oppo {
   color: rgb(4, 196, 255);
 }
 
-.btn__vivo{
+.btn__vivo {
   color: rgb(12, 110, 201);
 }
 
-.btn__xiaomi{
+.btn__xiaomi {
   color: rgb(207, 26, 177);
 }
 
@@ -206,9 +203,9 @@ font-weight: bold;
 .product:hover .product__name h3 {
   color: rgb(12, 111, 240);
 }
-.product:hover .product__btn-buy{
-    transform: translateX(0);
-    opacity: 1;
+.product:hover .product__btn-buy {
+  transform: translateX(0);
+  opacity: 1;
 }
 .product__image {
   padding: 30px 30px 0 30px;
@@ -217,7 +214,7 @@ font-weight: bold;
 .product__btn-buy {
   margin: auto;
   background-color: rgb(228, 85, 19);
-  width: 140px ;
+  width: 140px;
   height: 35px;
   border-radius: 20px;
   color: #fff;
@@ -228,11 +225,11 @@ font-weight: bold;
   transition: 0.7s ease;
   cursor: pointer;
 }
-.btn-buy1{
-    transform: translateX(180px); 
+.btn-buy1 {
+  transform: translateX(180px);
 }
-.product__btn-buy:hover{
-    opacity: 0.7 !important;
+.product__btn-buy:hover {
+  opacity: 0.7 !important;
 }
 .product__name {
   margin-top: 15px;
@@ -252,74 +249,67 @@ font-weight: bold;
   transition: 0.3s ease;
 }
 
-
 /* footer */
-.footer{
+.footer {
   display: flex;
   align-items: center;
   justify-content: center;
-background-image: linear-gradient(0, #35c5e9, #ba31fa);
-height: 50px;
+  background-image: linear-gradient(0, #35c5e9, #ba31fa);
+  height: 50px;
 }
-.footer >h3{
-  text-align:center;
-  color:#fff;
+.footer > h3 {
+  text-align: center;
+  color: #fff;
 }
-
-
-
 
 /* reponsive */
-@media (min-width:1024px) {
-  .nav-mobile{
+@media (min-width: 1024px) {
+  .nav-mobile {
     display: none;
   }
   .nav-search:focus {
     width: 300px;
   }
-  
 }
 /* reposive table */
-@media (min-width:768px) and (max-width:1023px){
+@media (min-width: 768px) and (max-width: 1023px) {
   .content {
     margin: 0 15px;
   }
   .content__section {
-    
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .nav-question{
+  .nav-question {
     display: none;
   }
-  .nav-mobile{
+  .nav-mobile {
     display: none;
   }
   .nav-cart,
-.nav-user{
+  .nav-user {
     padding: 0 10px;
   }
 }
 
-/*robosive mobile */ 
+/*robosive mobile */
 
-@media (max-width:767px) {
-  .nav-pc{
+@media (max-width: 767px) {
+  .nav-pc {
     display: none;
   }
   .header {
-    
   }
-.nav-container-mobile{
-  height: 60px;
-}
+  .nav-container-mobile {
+    height: 60px;
+  }
   .content {
     margin: 0px;
   }
-  .nav-search-mobile{
-    width:210px;
+  .nav-search-mobile {
+    width: 210px;
     outline: none;
   }
-  .nav-list-mobile{
+  .nav-list-mobile {
     display: flex;
     justify-content: center;
   }
@@ -327,19 +317,22 @@ height: 50px;
     border-bottom: 2px solid #fff;
     /* width: 300px; */
   }
-  .nav-search-mobile{
+  .nav-search-mobile {
     padding: 5px 10px;
     outline: none;
     background-color: transparent;
     border: none;
     color: #fff;
   }
-  .btn__header{
+  .btn__header {
     width: 125px;
   }
   .content__section {
-    
     grid-template-columns: 1fr 1fr;
   }
-  
+}
+@media (max-width: 370px) {
+  input {
+    width: 140px !important;
+  }
 }

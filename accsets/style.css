@@ -56,7 +56,7 @@ ul {
 }
 
 .nav-home {
-  border-bottom: 5px solid rgb(135, 195, 255);
+  border-bottom: 5px solid rgb(238, 153, 25);
 }
 .nav-item {
   height: 50px;
@@ -111,7 +111,7 @@ ul {
   color: #fff;
 }
 .nav-item:hover {
-  border-bottom: 5px solid rgb(135, 195, 255);
+  border-bottom: 5px solid rgb(238, 153, 25);
   transition: ease 0.2s;
 }
 .nav-item > a {

@@ -248,7 +248,6 @@ function reserBorderBtn(){
 //                         $(getElmClassBtnBuy[i]).css('transform','translateX(-180px)').css('opacity','0')
 
 //                     },600)
-          
 //         }
 //         })
 //     })}}

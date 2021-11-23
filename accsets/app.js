@@ -196,7 +196,8 @@ for(let i=0;i<arrayProducts.length;i++){
         arrayProducts[i].classBtnBuy1='btn-buy1';
     }
 }
-renderProduct(arrayProducts);
+const newArrayProducts=mixArray(arrayProducts);
+renderProduct( newArrayProducts);
 // hien thi danh sach dien thoai theo hang khi click:
 function showMobileIphone(btn,key){
   let arrayMobile=[];
@@ -222,9 +223,10 @@ showMobileIphone(getElmClassBtnXiaomi,'xiaomi');
 // render lai toàn bộ điện thoại;
 function showMobileAll(){
   getElmClassBtnAll.click(function(){
+    productHtml='';
     reserBorderBtn();
     getElmClassBtnAll.css('border','1px solid rgb(35, 20, 243)')
-    renderProduct(arrayProducts);
+    renderProduct(newArrayProducts);
   })
 }
 showMobileAll();
@@ -232,6 +234,18 @@ showMobileAll();
 function reserBorderBtn(){
   $('.btn__header').css('border','1px solid #ccc')
 }
+// ham hoan doi các phan tu trong mang
+function mixArray(array){
+for(let i=0;i<array.length;i=i+2){
+  for(let j=i+2;j<array.length;j++){
+  let term=array[j];
+  array[j]=array[i];
+  array[i]=term;
+  }
+  }
+  return array;
+}
+
 // const getElmClassBtnProduct=$('.product')
 // const getElmClassBtnBuy=$('.product__btn-buy')
 // function translateBtnBuy(){

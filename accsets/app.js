@@ -199,7 +199,7 @@ for(let i=0;i<arrayProducts.length;i++){
 const newArrayProducts=mixArray(arrayProducts);
 renderProduct( newArrayProducts);
 // hien thi danh sach dien thoai theo hang khi click:
-function showMobileIphone(btn,key){
+function showMobile(btn,key){
   let arrayMobile=[];
   btn.click(function(){
     reserBorderBtn();
@@ -215,11 +215,11 @@ if(object.classProductName.trim()==key){
   })
 }
 
-showMobileIphone(getElmClassBtnIphone,'iphone');
-showMobileIphone(getElmClassBtnSamsung,'samsung');
-showMobileIphone(getElmClassBtnOppo,'oppo');
-showMobileIphone(getElmClassBtnVivo,'vivo');
-showMobileIphone(getElmClassBtnXiaomi,'xiaomi');
+showMobile(getElmClassBtnIphone,'iphone');
+showMobile(getElmClassBtnSamsung,'samsung');
+showMobile(getElmClassBtnOppo,'oppo');
+showMobile(getElmClassBtnVivo,'vivo');
+showMobile(getElmClassBtnXiaomi,'xiaomi');
 // render lai toàn bộ điện thoại;
 function showMobileAll(){
   getElmClassBtnAll.click(function(){

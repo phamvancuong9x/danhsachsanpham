@@ -15,7 +15,7 @@ arrays.forEach(function(productObject){
 <div class="product__image">
     <img src="${productObject.image}" alt="image_mobile">
 </div>
-<div class="product__btn-buy ${productObject.classBtnBuy1}" >Mua hàng</div>
+<div class="product__btn-buy ${productObject.classBtnBuy1}" >Mua ngay</div>
 <div class="product__name ${productObject.classProductName}">
 <h3>
   ${productObject.name}

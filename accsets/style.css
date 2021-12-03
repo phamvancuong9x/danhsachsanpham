@@ -26,6 +26,9 @@ input::placeholder{
 ul {
   list-style-type: none;
 }
+.d-none{
+  display:none;
+}
 .nav-search:focus {
   border-bottom: 2px solid #fff;
 }
@@ -57,7 +60,6 @@ ul {
   list-style-type: none;
   align-items: center;
 }
-
 .nav-home {
   border-bottom: 5px solid rgb(238, 153, 25);
 }
@@ -129,6 +131,51 @@ ul {
   opacity: 0.7;
   transition: linear 0.2s;
 }
+/* nav__user */
+.user{
+  display: none;
+position: relative;
+}
+.user:hover .user__list{
+height: 115px;
+}
+.user__info{
+display: flex;
+align-items: center;
+}
+
+.user__image{
+width: 30px;  
+height: 30px;
+border-radius: 50%;
+overflow: hidden;
+margin-right: 5px;
+}
+
+.user__name{
+color: #fff;
+}
+.user__list{
+  color: #333;
+  background-color: rgb(228, 225, 225);
+  height: 0;
+  width: 150px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 10;
+  transition:all 0.4s ease;
+  overflow: hidden;
+}
+.user__item{
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.user__item:hover{
+  background-color: rgb(187, 183, 183);
+}
+
+
 /* content */
 .content {
   max-width: 1200px;
